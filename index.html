@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="app.js" defer></script>
+    <title>Task List</title>
+</head>
+<body>
+    <main>
+        <section class="flex-container">
+            <section class="task-insertion flex-item">
+                <header>
+                    <h2>Task List</h2>
+                </header>
+
+                <form class="task-insertion-form">
+                    <input class="input-add-task" type="text" aria-label="Input new task" placeholder="New task">
+                    <button type="submit" class="btn-add-task" aria-label="Click here to add the new task">ADD TASK</button>
+                </form>
+            </section>
+
+            <section class="task-filter flex-item">
+                <header>
+                    <h2>All Tasks</h2>
+                </header>
+
+                <section class="task-filter">
+                    <input class="input-filter-task" type="text" aria-label="Filter the tasks" placeholder="Filter tasks">
+                    <ul class="tasks-collection"></ul>
+                    <button class="btn-clear-task" aria-label="Click here to clear all tasks">CLEAR TASKS</button>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
